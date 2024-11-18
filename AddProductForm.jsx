@@ -7,7 +7,7 @@ const AddProductForm = ({ addProduct }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addProduct({ name, price: parseFloat(price), description });
+    addProduct({ name, price:(price), description });
     setName('');
     setPrice('');
     setDescription('');
